@@ -1,4 +1,4 @@
-![image](https://github.com/UMC-MJU/5th_Web_A/assets/68095767/c97a0e4f-db5a-4840-b2cd-f01b852e146b)# 💚 UMC MJU 5th Web A
+# 💚 UMC MJU 5th Web A
 [UMC MJU 5th를 위한 깃허브 사용법 및 규칙](https://makeus-challenge.notion.site/UMC-MJU-GITHUB-RULE-37679fa4f8fb4af4b2d0504b2a3e432d)
 
 <br>
