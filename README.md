@@ -48,6 +48,6 @@ TEST: 테스트 코드 추가 및 수정
 <br>
 
 ## 🍀 Members
-| [![텍스트](https://avatars.githubusercontent.com/u/94598346?v=4)](https://github.com/ggongjae) | [![텍스트](https://avatars.githubusercontent.com/u/56537513?v=4)](https://github.com/rabbitate) | [![텍스트](https://avatars.githubusercontent.com/u/94587782?v=4)](https://github.com/IDsebin) | [![텍스트](https://avatars.githubusercontent.com/u/72345074?v=4)](https://github.com/rlotr02) | [![텍스트] (https://avatars.githubusercontent.com/u/114395452?v=4)] (https://github.com/warmzer0) |
+| [![텍스트](https://avatars.githubusercontent.com/u/94598346?v=4)](https://github.com/ggongjae) | [![텍스트](https://avatars.githubusercontent.com/u/56537513?v=4)](https://github.com/rabbitate) | [![텍스트](https://avatars.githubusercontent.com/u/94587782?v=4)](https://github.com/IDsebin) | [![텍스트](https://avatars.githubusercontent.com/u/72345074?v=4)](https://github.com/rlotr02) | [![텍스트](https://avatars.githubusercontent.com/u/114395452?v=4)](https://github.com/warmzer0) | 
 |:---:|:---:|:---:|:---:|:---:|
 | 율/권건율 | 래비/김민표 | 닉스/김세빈 | 스이/이가은 | 제로/장난영 |
