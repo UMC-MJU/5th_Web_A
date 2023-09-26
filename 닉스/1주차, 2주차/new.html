@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background_image">
+      <div class="border_box">
+        <p
+          class="login_text"
+          style="font-weight: bold; font-size: 30px; color: black"
+        >
+          회원가입
+        </p>
+        <div
+          style="height: 1px; background-color: white; margin: 10px auto"
+        ></div>
+        <div class="content">
+          <div class="padding">
+            <span>이름</span>
+            <input id="name" required />
+            <span id="nameError" style="color: red"></span>
+          </div>
+          <div class="padding">
+            <span>닉네임</span>
+            <input id="nickname" />
+            <span id="nicknameError" style="color: red"></span>
+          </div>
+          <div class="padding">
+            <span>이메일</span>
+            <input id="email" />
+            <span id="emailError" style="color: green"></span>
+          </div>
+          <div class="padding">
+            <span>비밀번호</span>
+            <input id="password" />
+            <span id="passwordError" style="color: red"></span>
+          </div>
+          <div class="padding">
+            <span>비밀번호 확인</span>
+            <input id="confirmPassword" />
+            <span id="confirmPasswordError" style="color: red"></span>
+          </div>
+          <button id="open" style="font-size: 10px">가입하기</button>
+          <div class="modal-wrapper" style="display: none">
+            <div class="modal">
+              <div class="modal-title">가입성공</div>
+              <p>UMC 챌린저 가입을 축하합니다.</p>
+              <div class="close-wrapper">
+                <button id="close">닫기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="new.js"></script>
+  </body>
+</html>
