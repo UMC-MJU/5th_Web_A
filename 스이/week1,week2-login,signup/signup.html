@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <div class="signupdiv">
+      <h1>회원가입</h1>
+      <hr />
+      <div class="inputdiv">
+        <label>이름</label>
+        <input type="text" id="name" />
+        <p id="namep">&nbsp;</p>
+        <label>닉네임</label>
+        <input type="text" id="nickname" />
+        <p id="nicknamep">&nbsp;</p>
+        <label>이메일</label>
+        <input type="email" id="email" />
+        <p id="emailp">&nbsp;</p>
+        <label>비밀번호</label>
+        <input type="password" id="password" />
+        <p id="passwordp">&nbsp;</p>
+        <label>비밀번호 확인</label>
+        <input type="password" id="passwordconfirm" />
+        <p id="passwordconfirmp">&nbsp;</p>
+      </div>
+      <button id="signup" disabled>가입하기</button>
+    </div>
+    <div class="modalContainer" style="display: none">
+      <div class="modalContent">
+        <h2>가입 성공!</h2>
+        <p>umc 챌린저 가입을 축하합니다!</p>
+        <button id="close">닫기</button>
+      </div>
+    </div>
+    <script src="./signup.js" type="module"></script>
+  </body>
+</html>
