@@ -18,11 +18,23 @@ let emailPattern = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
 let pwdPattern = /^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/;
 
 function isCompleted() {
-    if(nameInput.value && (nicknameInput.value.length >= 2 && nicknameInput.value.length <= 5) && pwdPattern.test(pwdInput.value) &&
-    pwdInput.value === pwdCheckInput.value) {
+    if(nameInput.value && (nicknameInput.value.length >= 2 && nicknameInput.value.length <= 5) && emailPattern.test(emailInput.value) && 
+    pwdPattern.test(pwdInput.value) && pwdInput.value === pwdCheckInput.value) {
         return true;
     } else {
         return false;
+    }
+}
+
+function changeSignInBtn() {
+    if(isCompleted()) {
+        signInBtn.disabled = false;
+        signInBtn.style.backgroundColor = '#353535';
+        signInBtn.style.cursor = 'pointer';
+    } else {
+        signInBtn.disabled = true;
+        signInBtn.style.backgroundColor = 'grey';
+        signInBtn.style.cursor = 'default';
     }
 }
 
@@ -36,6 +48,8 @@ nameInput.addEventListener('input', () => {
         nameMsg.innerText = '필수 입력 항목입니다!';
         nameMsg.style.color = '#f05650';
     }
+
+    changeSignInBtn();
 })
 
 nicknameInput.addEventListener('input', () => {
@@ -48,6 +62,8 @@ nicknameInput.addEventListener('input', () => {
         nicknameMsg.innerText = '닉네임을 2 ~ 5글자로 구성해주세요!';
         nicknameMsg.style.color = '#f05650';
     }
+
+    changeSignInBtn();
 })
 
 
@@ -61,6 +77,8 @@ emailInput.addEventListener('input', () => {
         emailMsg.innerText = '올바른 이메일 형식이 아닙니다!';
         emailMsg.style.color = '#f05650';
     }
+
+    changeSignInBtn();
 })
 
 pwdInput.addEventListener('input', () => {
@@ -83,6 +101,8 @@ pwdInput.addEventListener('input', () => {
             pwdCheckMsg.style.color = '#f05650';
         }
     }
+
+    changeSignInBtn();
 })
 
 pwdCheckInput.addEventListener('input', () => {
@@ -98,15 +118,7 @@ pwdCheckInput.addEventListener('input', () => {
         }
     }
 
-    if(isCompleted()) {
-        signInBtn.disabled = false;
-        signInBtn.style.backgroundColor = '#353535';
-        signInBtn.style.cursor = 'pointer';
-    } else {
-        signInBtn.disabled = true;
-        signInBtn.style.backgroundColor = 'grey';
-        signInBtn.style.cursor = 'default';
-    }
+    changeSignInBtn();
 })
 
 
