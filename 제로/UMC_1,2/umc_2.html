@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMC</title>
+
+    <link href="styles.css" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    <div class = "joinmem_box">
+
+        <div class = "joinmem_text">회원 가입</div>
+
+        <div class="name">이름
+            <br>
+            <input type = "text" class="input_name">
+            <div class="nameError"></div>
+            <p></p>
+        </div>
+
+        <div class="nickname">닉네임
+            <br>
+            <input type = "text" class="input_nickname">
+            <div class="nicknameError"></div>
+            <p></p>
+        </div>
+
+        <div class="email">이메일
+            <br>
+            <input type = "text" class="input_email">
+            <div class="emailError"></div>
+            <p></p>
+        </div>
+
+        <div class="password">비밀번호
+            <br>
+            <input type = "password" class="input_password">
+            <div class="passwordError"></div>
+            <p></p>
+        </div>
+
+        <div class="passwordCheck">비밀번호 확인
+            <br>
+            <input type = "password" class="input_passwordCheck">
+            <div class="passwordCheckError"></div>
+            <p></p>
+        </div>
+
+        <p></p>
+
+        <button type = "button" class="open">가입하기</button>
+        
+        <div class="modal_wrapper" style="display: none">
+            <div class="modal">
+                <div class="modal_title">가입 성공!</div>
+                <p>umc 챌린저 가입을 축하합니다 !</p>
+                <div class="close_wrapper">
+                    <button type = "button" class = "close">닫기</button>
+                </div>
+            </div>
+         </div>
+         
+
+    </div>
+
+    <script src="umc_2.js"></script>
+</body>
+</html>
