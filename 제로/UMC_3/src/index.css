@@ -56,6 +56,6 @@ body{
 }
 
 .movie-item {
-  position: relative; /*movie-item 클래스를 기준 위치로 설정 */
+  position: relative;
 }
 
