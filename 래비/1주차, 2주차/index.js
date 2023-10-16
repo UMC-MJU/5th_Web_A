@@ -92,11 +92,13 @@ pwdInput.addEventListener('input', () => {
         pwdMsg.style.color = '#f05650';
     }
 
-    if(pwdInput.value.length != 0) {
+    if(pwdInput.value.length != 0 && pwdCheckInput.value.length != 0) {
         if(pwdInput.value === pwdCheckInput.value) {
+            pwdCheckMsg.style.visibility = 'visible';
             pwdCheckMsg.innerText = '비밀번호가 일치합니다!';
             pwdCheckMsg.style.color = '#00FF80';
         } else {
+            pwdCheckMsg.style.visibility = 'visible';
             pwdCheckMsg.innerText = '비밀번호가 일치하지 않습니다!';
             pwdCheckMsg.style.color = '#f05650';
         }
@@ -106,9 +108,8 @@ pwdInput.addEventListener('input', () => {
 })
 
 pwdCheckInput.addEventListener('input', () => {
-    pwdCheckMsg.style.visibility = 'visible';
-
     if(pwdInput.value.length != 0) {
+        pwdCheckMsg.style.visibility = 'visible';
         if(pwdInput.value === pwdCheckInput.value) {
             pwdCheckMsg.innerText = '비밀번호가 일치합니다!';
             pwdCheckMsg.style.color = '#00FF80';
