@@ -33,7 +33,7 @@ function checkInputs() {
   }
 }
 
-names.addEventListener("input", function (e) {
+names.addEventListener("input", function () {
   if (names.value === "") {
     namep.innerText = "필수 입력 항목입니다!";
     namep.style.color = "#ed6464";
@@ -46,7 +46,7 @@ names.addEventListener("input", function (e) {
   checkInputs();
 });
 
-nickname.addEventListener("input", function (e) {
+nickname.addEventListener("input", function () {
   if (nickname.value.length < 2 || nickname.value.length > 5) {
     nicknamep.innerText = "닉네임은 2~5글자로 구성해주세요!";
     nicknamep.style.color = "#ed6464";
@@ -59,7 +59,7 @@ nickname.addEventListener("input", function (e) {
   checkInputs();
 });
 
-email.addEventListener("input", function (e) {
+email.addEventListener("input", function () {
   if (email.value.includes("@") && email.value.endsWith(".com")) {
     emailp.innerText = "올바른 메일 형식입니다!";
     emailp.style.color = "#6bc97b";
@@ -74,7 +74,7 @@ email.addEventListener("input", function (e) {
 
 let reg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/;
 
-password.addEventListener("input", function (e) {
+password.addEventListener("input", function () {
   if (reg.test(password.value)) {
     passwordp.innerText = "안전한 비밀번호입니다!";
     passwordp.style.color = "#6bc97b";
@@ -87,7 +87,7 @@ password.addEventListener("input", function (e) {
   checkInputs();
 });
 
-passwordconfirm.addEventListener("input", function (e) {
+passwordconfirm.addEventListener("input", function () {
   if (password.value === passwordconfirm.value) {
     passwordconfirmp.innerText = "비밀번호가 일치합니다.";
     passwordconfirmp.style.color = "#6bc97b";
