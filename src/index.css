@@ -1,73 +1,214 @@
 body{
-  background-color: #22254b;
+  /* background-color: #22254b; */
+   background-color: white;
+   margin: 0%;
 }
 
-.app-container {
-  position: relative;
-  display: flex;
-  flex-basis: 0;
-  flex-wrap: wrap;
+.joinmem_box {
+  width: 700px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-color: rgb(195, 195, 195);
+  border-radius: 17px 17px;
+  opacity: 70%;
+  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: 10px;
   text-align: center;
-  margin: 20px;
 }
 
-.movie-container {
-  width: 140px;
-  margin: 14px;
-  margin-left: 4px;
-  background-color: #353968;
+.joinmem_text {
+  width: 400px;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  border-bottom: 2px solid;
+  border-color: white;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.name {
+  margin-left: 221px;
   color: white;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-} 
-
-.movie-container img {
-  max-width: 100%;
+  text-align: left;
 }
 
-.movie-details {
+.nickname {
+  margin-left: 221px;
+  color: white;
+  text-align: left;
+}
+
+.email {
+  margin-left: 221px;
+  color: white;
+  text-align: left;
+}
+
+.password {
+  margin-left: 221px;
+  color: white;
+  text-align: left;
+}
+
+.passwordCheck {
+  margin-left: 221px;
+  color: white;
+  text-align: left;
+}
+
+
+.input_name {
+  width: 250px;
+  height: 33px;
+  border: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(195, 195, 195);
+  border-style: bold;
+  border-radius: 7px 7px;
+}
+
+.input_nickname {
+  width: 250px;
+  height: 33px;
+  border: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(195, 195, 195);
+  border-style: bold;
+  border-radius: 7px 7px;
+}
+
+.input_email {
+   width: 250px;
+  height: 33px;
+  border: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(195, 195, 195);
+  border-style: bold;
+  border-radius: 7px 7px;
+}
+
+.input_password {
+  width: 250px;
+  height: 33px;
+  border: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(195, 195, 195);
+  border-style: bold;
+  border-radius: 7px 7px;
+}
+
+.input_passwordCheck {
+  width: 250px;
+  height: 33px;
+  border: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(195, 195, 195);
+  border-style: bold;
+  border-radius: 7px 7px;
+}
+
+.open {
+  width: 250px;
+  height: 47px;
+  border: none;
+  font-size: 25px;
+  background-color:rgb(161, 159, 159);
+  border-style: bold;
+  border-radius: 13px 13px;
+  margin: 1%;
+  color: white;
+}
+
+.modal_wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
-  opacity: 0.6;
-  padding: 10px;
-  border-radius: 5px;
-
   width: 100%;
   height: 100%;
-  margin: 14px;
-
-  z-index :1;
-  color: white;
-  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.movie-details h2 {
-  color: white;
-  font-size: 10px;
+.modal {
+
+  background: white;
+  padding: 24px 16px;
+  border-radius: 4px;
+  width: 320px;
+  align-items: center;
 }
 
-.movie-details p {
-  font-size: 7px;
-  color: white;
+.modal_title {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.movie-item {
-  position: relative;
+.modal p {
+  font-size: 16px;
 }
 
-.root-wrap {
-  font-size: 25px;
-  list-style: none;
+.close_wrapper {
+  text-align: right;
+}
 
-  position: relative;
-  display: list-item;
-  flex-basis: 0;
-  flex-wrap: wrap;
-  justify-content: left;
-  text-align: space-between;
-  margin: 15px;
+.nameError {
+  margin-top: 3px;
+  font-size: 12px;
+  color: red;
+  margin: 0;
+}
+
+.nicknameError {
+  margin-top: 3px;
+  font-size: 12px;
+  color: red;
+}
+
+.emailError {
+  margin-top: 3px;
+  font-size: 12px;
+  color: red;
+}
+
+.passwordError {
+  margin-top: 3px;
+  font-size: 12px;
+  color: red;
+}
+
+.passwordCheckError {
+  margin-top: 3px;
+  font-size: 12px;
+  color: red;
+}
+
+.error{
+  color: red;
+  margin: 0%;
+}
+.success{
+  color: green;
+  margin: 0%;
 }

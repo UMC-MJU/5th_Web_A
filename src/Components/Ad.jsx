@@ -3,7 +3,7 @@ import React from 'react';
 const Ad = () => {
   return (
     <div>
-      <img src="./images/Untitled.svg" alt="광고" />
+      <img src="./Untitled.svg" alt="광고" />
     </div>
   );
 }
