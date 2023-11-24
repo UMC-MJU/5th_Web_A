@@ -79,6 +79,7 @@ input::placeholder {
 
 #signInForm {
     background-color: #93959F;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,14 +93,14 @@ input::placeholder {
     padding-bottom: 10px;
     margin-top: 0;
     border-bottom: 1px solid white;
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 
-.text {
+label {
     color: white;
-    font-size: 1.2rem;
     width: 82%;
     text-align: left;
+    font-size: 1.1rem;
 }
 
 #signInForm > input {
@@ -108,7 +109,6 @@ input::placeholder {
     border-radius: 5px;
     background-color: #93959F;
     width: 80%;
-    font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -120,7 +120,7 @@ input::placeholder {
     width:82%;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     visibility: hidden;
 }
 
@@ -131,7 +131,6 @@ input::placeholder {
     color:white;
     background-color: grey;
     border-radius: 10px;
-    margin-top: 20px;
     margin-bottom: 20px;
     border: none;
 }
