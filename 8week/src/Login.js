@@ -7,9 +7,6 @@ function Login() {
     password: '',
   });
 
-  const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
-
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -20,15 +17,17 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault(); 
     try {
-      const response = await axios.post('http://localhost:3000/user', {
-        id: form.email,
-        pw: form.password
-      });
-      console.log(response.data);
+        const response = await axios.post('http://localhost:8000/user/login', {
+            id: form.email,
+            pw: form.password
+    });
+        // 서버에서 받은 토큰과 id를 로컬 스토리지에 저장
+        localStorage.setItem('token', response.data.result.AccessToken);
+        localStorage.setItem('id', response.data.result.userId);
     } catch (error) {
-      console.error("Error:", error);
+        console.error("Error:", error);
     }
-  };
+};
 
 
   return (
@@ -41,15 +40,13 @@ function Login() {
           <div>
             <p>이메일 주소</p>
             <input type="email" name="email" value={form.email} onChange={handleChange} placeholder='이메일을 입력하세요'/>
-            {emailError && <span className="error">{emailError}</span>}
           </div>
           <div>
             <p>비밀번호</p>
             <input type="password" name="password" value={form.password} onChange={handleChange} placeholder='영문,숫자,특수문자 포함 8자이상' />
-            {passwordError && <span className="error">{passwordError}</span>}
           </div>
           <br/>
-          <button className="submit_button"type="submit" onSubmit={handleSubmit}>가입하기</button>
+          <button className="submit_button"type="submit" onClick={handleSubmit}>가입하기</button>
         </form>
       </div>
     </div>
