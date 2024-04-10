@@ -1,0 +1,246 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: GmarketSansMedium;
+  vertical-align: baseline;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "GmarketSansMedium";
+  font-weight: 400;
+  font-size: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-container {
+  background: white;
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.movie-container {
+  height: 365px;
+  display: flex;
+  background: #373b69;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title-container {
+  width: 200px;
+  color: #ffffff;
+  display: flex;
+  padding: 15px 18px;
+  box-sizing: border-box;
+}
+
+.title-container h5 {
+  font-size: 13px;
+}
+
+.title-container span {
+  font-size: 13px;
+  margin-left: auto;
+}
+
+.desc-container {
+  position: absolute;
+  width: 200px;
+  height: 365px;
+}
+
+.desc-container div {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #c4c1c1;
+}
+
+.desc-container h5 {
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+.desc-container p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 17;
+  -webkit-box-orient: vertical;
+  font-size: 12px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #032541;
+  padding: 20px 280px;
+}
+
+.navbarimg {
+  vertical-align: bottom;
+}
+
+.navbarMenu {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.logindiv {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.logindiv button {
+  border-radius: 100px;
+  width: 80px;
+  height: 28px;
+  border: none;
+  color: #032541;
+  font-weight: 600;
+}
+
+.logindiv span {
+  color: white;
+  margin-left: 10px;
+}
+
+.moviedetail {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 280px;
+}
+
+.moviedetail img {
+  width: 250px;
+}
+
+.moviedetail h2 {
+  margin-left: 25px;
+}
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 280px;
+  font-size: 18px;
+}
+
+.notfound h1 {
+  margin-bottom: 15px;
+}
+
+.notfound button {
+  margin-top: 8px;
+  color: red;
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-size: 18px;
+}
